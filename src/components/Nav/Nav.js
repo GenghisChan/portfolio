@@ -33,9 +33,12 @@ class Nav extends Component {
             <img src={exit} alt="exit-btn" className="exit-btn" id="exit-btn" onClick={() => this.toggleMenu()} style={{ visibility: this.state.show ? "visible" : "hidden" }} />
           </li>
           <li onClick={() => this.handleChange()}><Link to="/">home</Link></li>
-          <li onClick={() => this.handleChange()}> <Link to="/about">About me</Link></li>
-          <li onClick={() => this.handleChange()}> <Link to="/projects">Projects</Link></li>
-          <li onClick={() => this.handleChange()}> <Link to="/contact">Contact</Link></li>
+          <li onClick={() => this.handleChange()}><Link to="/about">About me</Link></li>
+          <li onClick={() => this.handleChange()}><Link to="/pr1">Meet</Link></li>
+          <li onClick={() => this.handleChange()}><Link to="/pr2">Weather App</Link></li>
+          <li onClick={() => this.handleChange()}><Link to="/pr3">Boozer</Link></li>
+
+          <li onClick={() => this.handleChange()}><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>
     )
